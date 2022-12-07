@@ -1,1 +1,1 @@
-# medium_api_gateway
+# medium_protos
