@@ -10,7 +10,7 @@ import "google/protobuf/empty.proto";
 service UserService {
     rpc Create(User) returns (User) {}
     rpc Get(IdRequest) returns (User) {}
-    rpc GetAll(GetAllUsersRequest) returns (GetAllUsersResponse) {}
+    rpc GetAll(GetAllUsersParamsRequest) returns (GetAllUsersResponse) {}
     rpc Update(User) returns (User) {}
     rpc Delete(IdRequest) returns (google.protobuf.Empty) {} 
 }
