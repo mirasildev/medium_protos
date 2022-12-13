@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/post_service";
+
+import "category.proto";
+
+service CategoryService {
+    rpc Create(Category) returns (Category) {}
+    rpc Get(GetCategoryRequest) returns (Category) {}
+}
