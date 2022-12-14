@@ -42,7 +42,7 @@ message VerifyTokenRequest {
 message AuthPayload {
 	string id = 1;
 	int64 user_id = 2;
-	int64 email = 3;
+	string email = 3;
 	string user_type = 4;
 	string issued_at = 5;
 	string expired_at = 6;
