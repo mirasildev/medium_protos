@@ -10,6 +10,22 @@ message Category {
 	string created_at = 3;
 }
 
-message GetCategoryRequest {
+message GetRequest {
 	int64 id = 1;
+}
+
+message GetAllCategoriesRequest {
+    int32 limit = 1;
+    int32 page = 2;
+    string search = 3;
+}
+
+message GetAllCategoriesResponse {
+    repeated Category categories = 1;
+    int32 count = 2;
+}
+
+message UpdateCategoryRequest {
+    int64 id = 1; 
+    string title = 2;
 }
