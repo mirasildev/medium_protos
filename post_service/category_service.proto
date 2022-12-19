@@ -9,8 +9,8 @@ import "google/protobuf/empty.proto";
 
 service CategoryService {
     rpc Create(Category) returns (Category) {}
-    rpc Get(GetRequest) returns (Category) {}
+    rpc Get(GetCategory) returns (Category) {}
     rpc GetAll(GetAllCategoriesRequest) returns (GetAllCategoriesResponse) {}
     rpc Update(UpdateCategoryRequest) returns (Category) {}
-    rpc Delete(GetRequest) returns (google.protobuf.Empty) {}
+    rpc Delete(GetCategory) returns (google.protobuf.Empty) {}
 }

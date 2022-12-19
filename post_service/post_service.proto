@@ -9,8 +9,8 @@ import "google/protobuf/empty.proto";
 
 service PostService {
     rpc Create(Post) returns (Post) {}
-    rpc Get(IdRequest) returns (Post) {}
+    rpc Get(GetPost) returns (Post) {}
     rpc GetAll(GetAllPostsRequest) returns (GetAllPostsResponse) {}
     rpc Update(UpdatePostRequest) returns (Post) {}
-    rpc Delete(IdRequest) returns (google.protobuf.Empty) {}
+    rpc Delete(GetPost) returns (google.protobuf.Empty) {}
 }

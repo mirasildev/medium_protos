@@ -10,7 +10,7 @@ message Category {
 	string created_at = 3;
 }
 
-message GetRequest {
+message GetCategory {
 	int64 id = 1;
 }
 
