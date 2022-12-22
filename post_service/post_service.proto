@@ -5,8 +5,12 @@ package genproto;
 option go_package="genproto/post_service";
 
 import "post.proto";
+import "google/protobuf/empty.proto";
 
 service PostService {
     rpc Create(Post) returns (Post) {}
-    rpc Get(GetPostRequest) returns (Post) {}
+    rpc Get(GetPost) returns (Post) {}
+    rpc GetAll(GetAllPostsRequest) returns (GetAllPostsResponse) {}
+    rpc Update(UpdatePostRequest) returns (Post) {}
+    rpc Delete(GetPost) returns (google.protobuf.Empty) {}
 }
