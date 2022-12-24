@@ -36,3 +36,19 @@ message GetAllUsersResponse {
 message GetByEmailRequest {
     string email = 1;
 }
+
+message UpdateUserRequest {
+    int64 id = 1;
+    string first_name = 2;
+    string last_name = 3;
+    string phone_number = 4;
+    string gender = 5;
+    string username = 6;
+    string profile_image_url = 7;
+}
+
+message UpdateUserResponse {
+    string email = 1;
+    string type = 2;
+    string created_at = 3;
+}

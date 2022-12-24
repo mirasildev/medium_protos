@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package genprot;
+package genproto;
 
 option go_package="genproto/notification_service";
 
