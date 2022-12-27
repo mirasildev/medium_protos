@@ -8,7 +8,7 @@ import "like.proto";
 import "google/protobuf/empty.proto";
 
 service LikeService {
-    rpc Create(Like) returns (google.protobuf.Empty) {}
+    rpc CreateOrUpdate(Like) returns (google.protobuf.Empty) {}
     rpc Get(GetLike) returns (Like) {}
     rpc GetAllLikesCount(GetLike) returns (AllLikesCount) {}
 }
