@@ -11,6 +11,6 @@ service CommentService {
     rpc Create(Comment) returns (Comment) {}
     rpc Get(GetComment) returns (Comment) {}
     rpc GetAll(GetAllCommentsRequest) returns (GetAllCommentsResponse) {}
-    rpc Update(UpdateCommentRequest) returns (Comment) {}
+    rpc Update(Comment) returns (Comment) {}
     rpc Delete(GetComment) returns (google.protobuf.Empty) {}
 }

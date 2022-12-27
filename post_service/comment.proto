@@ -43,9 +43,3 @@ message GetAllCommentsResponse {
     repeated Comment comments = 1;
     int32 count = 2;
 }
-
-message UpdateCommentRequest {
-    int64 id = 1; 
-    string description = 2;
-    string updated_at = 3;
-}
