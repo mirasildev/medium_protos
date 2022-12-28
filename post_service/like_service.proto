@@ -5,10 +5,9 @@ package genproto;
 option go_package="genproto/post_service";
 
 import "like.proto";
-import "google/protobuf/empty.proto";
 
 service LikeService {
-    rpc CreateOrUpdate(Like) returns (google.protobuf.Empty) {}
+    rpc CreateOrUpdate(Like) returns (Like) {}
     rpc Get(GetLike) returns (Like) {}
     rpc GetAllLikesCount(GetLike) returns (AllLikesCount) {}
 }
